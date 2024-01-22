@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    background-color: #ff7171;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    letter-spacing: 2px;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+.hamberger {
+    height: 20px;
+    width: 20px;
+}
+
+.main-section {
+    background-image: linear-gradient(to right, #fff4b0, #ffd5ce);
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+
+}
+
+.heading {
+    letter-spacing: 10px;
+    font-weight: 700;
+}
+
+.custom-button {
+    background-color: #ff7171;
+    color: #fff;
+    height: 30px;
+    width: 150px;
+    border: 0;
+}
+
+.main-card {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    gap: 30px;
+    margin: 50px;
+}
+
+@media screen and (max-width: 575px) {
+    .navbar {
+        height: 40px;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    #mobile-menu {
+        display: flex;
+    }
+
+    .navbar-menu {
+        font-size: 10px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .para {
+        font-size: 10px;
+    }
+
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
+        width: 100vw;
+    }
+
+    .main-card {
+        width: 80vw;
+        padding: 10px;
+        height: 50vh;
+        margin: 10px;
+        gap: 0;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media screen and (min-width:576px) and (max-width:991px) {
+    .navbar {
+        height: 70px;
+        align-items: center;
+    }
+
+    .navbar-menu {
+        font-size: 15px;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .para {
+        font-size: 20px;
+    }
+
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
+        width: 100vw;
+    }
+
+    .main-card {
+        width: 80vw;
+        padding: 10px;
+        height: 50vh;
+        margin: 10px;
+        gap: 0;
+    }
+
+}
+
+.food-img-container {
+    width: 60vw;
+}
+
+@media screen and (max-width : 575px) {
+    .food-img-container {
+        height: 35vh;
+        width: 80vw;
+        margin: 10px;
+        padding: 10px;
+
+    }
+
+    .food-img {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+.food-img {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (min-width:576px) and (max-width:991px) {
+    .food-img-container {
+        width: 80vw;
+        margin: 10px;
+
+    }
+
+    .food-img {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+.second-page {
+    background-image: linear-gradient(to right, #fff4b0, #ffd5ce);
+    height: 90vh;
+    width: 100vw;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    height: 20px;
+    width: 20px;
+}
+
+@media screen and (max-width : 575px) {
+    .second-page {
+        flex-direction: column;
+    }
+}
+
+.restro-container {
+    display: flex;
+    gap: 10px;
+    height: 70vh;
+    width: 40vw;
+    margin-left: 50px;
+
+}
+
+@media screen and (max-width : 575px) {
+    .restro-container {
+        height: 46vh;
+        width: 80vw;
+        margin: 20px;
+        gap: 10px;
+    }
+
+}
+
+.image-container1 {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 20vw;
+    gap: 10px;
+}
+
+@media screen and (max-width : 575px) {
+    .image-container1 {
+        height: 46vh;
+        width: 40vw;
+    }
+
+    .image1 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .img-row {
+        height: 22vh;
+        width: 45vw
+    }
+}
+
+.img-row {
+    height: 34vh;
+    width: 20vw;
+}
+
+@media screen and (max-width : 575px) {
+
+    .img-row {
+        height: 22vh;
+        width: 40vw
+    }
+}
+
+.image1 {
+    height: 100%;
+    width: 100%;
+}
+
+.image-container2 {
+    height: 70vh;
+    width: 20vw;
+
+}
+
+@media screen and (max-width : 575px) {
+    .image-container2 {
+        height: 46vh;
+        width: 40vw;
+    }
+
+    .image2 {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.image2 {
+    height: 100%;
+    width: 100%;
+}
+
+.second-page-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 40vh;
+    width: 30vw;
+    background-color: #ff7171;
+    margin: 20px;
+}
+
+.heading2 {
+    letter-spacing: 7px;
+    font-weight: 700;
+}
+
+@media screen and (min-width:576px) and (max-width:991px) {
+    .heading2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width : 575px) {
+    .second-page-card {
+        height: 27vh;
+        width: 75vw;
+        margin: 20px;
+        padding: 10px;
+        justify-content: flex-start;
+    }
+
+    .heading2 {
+        font-size: 15px;
+    }
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    gap: 5px;
+}
+
+.custom-button2 {
+    background-color: #ff7171;
+    text-align: left;
+    align-content: center;
+    color: #000;
+    width: 40px;
+    height: 30px;
+    border: 0;
+}
+
+@media screen and (min-width:576px) and (max-width:991px) {
+    .second-page {
+        flex-direction: column;
+    }
+
+    .restro-container {
+        height: 46vh;
+        width: 80vw;
+        margin: 20px;
+        gap: 10px;
+    }
+
+    .image-container1 {
+        height: 46vh;
+        width: 40vw;
+    }
+
+    .image1 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .img-row {
+        height: 22vh;
+        width: 40vw
+    }
+
+    .image-container2 {
+        height: 46vh;
+        width: 40vw;
+    }
+
+    .image2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .second-page-card {
+        height: 27vh;
+        width: 75vw;
+        margin: 20px;
+        padding: 10px;
+        justify-content: flex-start;
+    }
+}
